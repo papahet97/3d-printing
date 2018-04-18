@@ -1,11 +1,8 @@
-M140 S70		; set bed temperature to 70 and continue
-M104 S190		; set extruder temperature to 190 and continue
+
 M83			; set extruder to relative mode
 G28 			; home all axes
 G1 Z2 F5000		; lift nozzle 2 mm
-M109 S190		; set extruder temperature to 190 and wait
 G1 E-2 F50		; retract filament 2mm
-M190 S70		; set bed temperature to 70 and wait
 
 ; Cycle 1
 G28
